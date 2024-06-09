@@ -1,4 +1,4 @@
-def call(Map params = [:]) {
+def call(Map parametro = [:]) {
     sh "echo Hola desde Shared Libraries"
-    sh "echo Valor que se paso ${params.valor1}. O valor 2: ${params.valor2}."
+    sh "echo Valor que se paso ${parametro.valor1}. O valor 2: ${parametro.valor2}."
 }
