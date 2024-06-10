@@ -1,4 +1,4 @@
-def call() {
+def call(Map parametro) {
     pipeline {
         agent any
     
@@ -7,7 +7,7 @@ def call() {
                 steps {
                     script {
                         sh "echo Hola desde Shared Libraries"
-                        //sh "echo Valor que se paso ${parametro.valor1}. O valor 2: ${parametro.valor2}."
+                        sh "echo Valor que se paso ${parametro.valor1}. O valor 2: ${parametro.valor2}."
                     }
                 }
             }
